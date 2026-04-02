@@ -1,0 +1,48 @@
+{
+  "1": {
+    "country": "United States/Canada",
+    "area_codes": {
+      "212": {"location": "New York, NY", "timezone": "EST"},
+      "213": {"location": "Los Angeles, CA", "timezone": "PST"},
+      "310": {"location": "Los Angeles, CA", "timezone": "PST"},
+      "312": {"location": "Chicago, IL", "timezone": "CST"},
+      "415": {"location": "San Francisco, CA", "timezone": "PST"},
+      "617": {"location": "Boston, MA", "timezone": "EST"},
+      "202": {"location": "Washington, DC", "timezone": "EST"},
+      "305": {"location": "Miami, FL", "timezone": "EST"},
+      "404": {"location": "Atlanta, GA", "timezone": "EST"},
+      "512": {"location": "Austin, TX", "timezone": "CST"},
+      "206": {"location": "Seattle, WA", "timezone": "PST"},
+      "303": {"location": "Denver, CO", "timezone": "MST"},
+      "702": {"location": "Las Vegas, NV", "timezone": "PST"},
+      "407": {"location": "Orlando, FL", "timezone": "EST"},
+      "713": {"location": "Houston, TX", "timezone": "CST"}
+    }
+  },
+  "54": {
+    "country": "Argentina",
+    "area_codes": {
+      "11": {"location": "Buenos Aires", "timezone": "ART"},
+      "221": {"location": "La Plata", "timezone": "ART"},
+      "341": {"location": "Rosario", "timezone": "ART"},
+      "351": {"location": "Córdoba", "timezone": "ART"},
+      "261": {"location": "Mendoza", "timezone": "ART"}
+    }
+  },
+  "44": {
+    "country": "United Kingdom",
+    "area_codes": {
+      "20": {"location": "London", "timezone": "GMT"},
+      "121": {"location": "Birmingham", "timezone": "GMT"},
+      "161": {"location": "Manchester", "timezone": "GMT"}
+    }
+  },
+  "61": {
+    "country": "Australia",
+    "area_codes": {
+      "2": {"location": "Sydney/Canberra", "timezone": "AEST"},
+      "3": {"location": "Melbourne", "timezone": "AEST"},
+      "7": {"location": "Brisbane", "timezone": "AEST"}
+    }
+  }
+}
