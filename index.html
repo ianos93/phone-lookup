@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Carrier Lookup</title>
+  <style>
+    /* paste your preferred styles here */
+  </style>
+</head>
+<body>
+  <h1>📞 Phone Carrier Lookup</h1>
+  <input id="phone" type="tel" placeholder="+1 415 555 0123" />
+  <button onclick="lookup()">Look Up</button>
+  <div id="result"></div>
+
+  <script>
+    const WORKER_URL = "https://phone-lookup.yourname.workers.dev"; // ← your worker URL
+
+    async function lookup() {
+      const phone = document.getElementById("phone").value;
+      const res = await fetch(`${WORKER_URL}?phone=${encodeURIComponent(phone)}`);
+      const data = await res.json();
+      document.getElementById("result").innerHTML = `
+        <p>Carrier: ${data.carrier || "Unknown"}</p>
+        <p>Type: ${data.line_type || "—"}</p>
+        <p>Location: ${data.location || "—"}</p>
+        <p>Country: ${data.country || "—"}</p>
+        <p>Valid: ${data.valid}</p>
+      `;
+    }
+  </script>
+</body>
+</html>
